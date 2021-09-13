@@ -1,0 +1,26 @@
+{
+    "name": "Netflix Ratings",
+    "description": "Get Movies/TV Shows ratings on Netflix from IMDB, Metacritic and OMDB. Requires TMDB and OMDB API keys",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+    {
+        "matches": ["https://*.netflix.com/*"],
+        "js": ["netflix_ratings.js"],
+        "css": ["netflix_ratings.css"]
+    }
+    ],
+    "permissions": ["tabs", "storage"],
+    "action": {
+        "default_popup": "netflix_ratings_setup.html",
+        "default_icon": {
+            "128": "/images/netflix_ratings_disabled.png"
+        }
+    },
+    "icons": {
+        "128": "/images/netflix_ratings.png"
+    }
+}

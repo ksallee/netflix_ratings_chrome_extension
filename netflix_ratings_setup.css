@@ -1,0 +1,74 @@
+body{
+    min-width: 250px;
+}
+input[type="text"]{
+    min-width: 200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
+input {
+  font-size: 12px;
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+label {
+    color: midnightblue;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+.error {
+    color: darkred;
+}
+.success {
+    color: darkgreen;
+}
+p {
+    margin-top: 2px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.saveButton{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #2562a4;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color: #fff;
+    background-color: #4094cb;
+    text-align:center;
+    transition: all 0.2s;
+}
+.saveButton:hover{
+    background-color: #196396;
+}

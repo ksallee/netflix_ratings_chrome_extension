@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="netflix_ratings_setup.css">
+  </head>
+  <body>
+    <label for="tmdbApiKey">TMDB API Key (*):</label>
+    <input type="text" id="tmdbApiKey" placeholder="Enter your TMDB API Key"/>
+    <p>
+        <a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank" rel="noopener noreferrer">How to get your TMDB API key</a>
+    </p>
+    <label for="omdbApiKey">OMDB API Key (*):</label>
+    <input type="text" id="omdbApiKey" placeholder="Enter your OMDB API Key"/>
+    <p>
+        <a href="http://www.omdbapi.com/apikey.aspx" target="_blank" rel="noopener noreferrer">Get your OMDB API key</a>
+    </p>
+    <div class="status center"><span id="status" class="center"></span></div>
+    <div class="center"><button id="save" class="saveButton-hover saveButton">Save</button></div>
+    <script src="netflix_ratings_setup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.detailsPageRating{
+  font-size: 13pt;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.mainPageRating{
+  font-size: 10pt;
+}
+
+.inaccurate{
+  color: #ecb4a0;
+}
